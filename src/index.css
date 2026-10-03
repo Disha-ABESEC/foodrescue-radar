@@ -1,0 +1,88 @@
+/* Design Tokens and Global Resets */
+:root {
+  /* Brand Green Palette */
+  --primary-forest: #134e34;
+  --primary-deep: #0f3d28;
+  --primary-accent: #2e7d4f;
+  --primary-light: #ecfdf5;
+  --primary-soft: #d1fae5;
+  --primary-border: #a7f3d0;
+
+  /* Urgency Palette */
+  --urgent-red: #dc2626;
+  --urgent-red-bg: #fee2e2;
+  --urgent-red-border: #fca5a5;
+  --urgent-high: #ea580c;
+  --urgent-high-bg: #ffedd5;
+  --urgent-med: #d97706;
+  --urgent-med-bg: #fef3c7;
+  --urgent-low: #059669;
+  --urgent-low-bg: #d1fae5;
+
+  /* Neutrals & Surfaces */
+  --bg-page: #f8faf8;
+  --bg-surface: #ffffff;
+  --bg-surface-subtle: #f1f5f2;
+  --border-subtle: #e5ebe6;
+  --border-medium: #cbd7ce;
+
+  /* Text Colors */
+  --text-main: #19261f;
+  --text-body: #425248;
+  --text-muted: #6b7c72;
+  --text-white: #ffffff;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 3px rgba(18, 48, 30, 0.05), 0 1px 2px rgba(18, 48, 30, 0.03);
+  --shadow-md: 0 4px 12px rgba(18, 48, 30, 0.06), 0 2px 4px rgba(18, 48, 30, 0.04);
+  --shadow-lg: 0 12px 28px rgba(18, 48, 30, 0.09), 0 4px 10px rgba(18, 48, 30, 0.04);
+  --shadow-xl: 0 20px 40px rgba(18, 48, 30, 0.12), 0 8px 16px rgba(18, 48, 30, 0.06);
+
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
